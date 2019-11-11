@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+import java.util.function.IntFunction;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class ProjectOne {
 
@@ -53,7 +56,7 @@ public class ProjectOne {
      * 2+4+6+8 = 20
      * total should be 20;
      */
-    public int evenTotal(ArrayList<Integer> MyNumbers) {
+    public int evenTotal(ArrayList<Integer> myList) {
         int total = 0;
         // write your code here
 
@@ -69,7 +72,7 @@ public class ProjectOne {
      * 1+3+5+7+9 = 25
      * total should be 25;
      */
-    public int oddTotal(ArrayList<Integer> MyNumbers) {
+    public int oddTotal(ArrayList<Integer> myList) {
         int total = 0;
         // write your code here
 
@@ -77,7 +80,6 @@ public class ProjectOne {
         // end of code
         return total;
     }
-
 
     /**
      * Make the name upper case
@@ -95,7 +97,7 @@ public class ProjectOne {
      * Make the name lower case
      */
     public String getLowerCase(String name) {
-        String lowerCaseName = "";
+        String lowerCaseName = null;
         // write your code here
 
 
@@ -144,7 +146,7 @@ public class ProjectOne {
 
     /**
      * Check if integer and string representation of number are equal
-     * ex: 1, "1" => true
+     * ex: (1, "1") => true
      */
     public boolean compareIntAndString(int a, String b) {
         boolean result = false;
@@ -172,7 +174,7 @@ public class ProjectOne {
      * ex: {1,2} => {2,4}
      */
     public List<Integer> multipliedBy2(List<Integer> numbers) {
-        ArrayList<Integer> result = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
         // write your code here
 
 
@@ -184,8 +186,8 @@ public class ProjectOne {
      * return a list where each string is doubled
      * ex: "Apple" => "AppleApple"
      */
-    public List<String> doubledWord(List<String> numbers) {
-        ArrayList<String> result = new ArrayList<>();
+    public List<String> doubledWord(List<String> words) {
+        List<String> result = new ArrayList<>();
         // write your code here
 
 
@@ -196,7 +198,7 @@ public class ProjectOne {
     /**
      * Check if array has duplicates
      */
-    public boolean hasDuplicates(char[] characters) {
+    public boolean hasDuplicates(Character[] characters) {
         boolean result = false;
         // write your code here
 

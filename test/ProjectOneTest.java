@@ -339,7 +339,7 @@ public class ProjectOneTest {
     @Test
     public void hasDuplicates_test1() {
         // GIVEN
-        char[] characters = {'A', 'B', 'C', 'C'};
+        Character[] characters = {'A', 'B', 'C', 'C'};
 
         // WHEN
         boolean condition = project.hasDuplicates(characters);
@@ -351,7 +351,7 @@ public class ProjectOneTest {
     @Test
     public void hasDuplicates_test2() {
         // GIVEN
-        char[] characters = {'A', 'B',  'B',  'C'};
+        Character[] characters = {'A', 'B',  'B',  'C'};
 
         // WHEN
         boolean condition = project.hasDuplicates(characters);
@@ -363,7 +363,7 @@ public class ProjectOneTest {
     @Test
     public void hasDuplicates_test3() {
         // GIVEN
-        char[] characters = {};
+        Character[] characters = {};
 
         // WHEN
         boolean condition = project.hasDuplicates(characters);
@@ -447,7 +447,8 @@ public class ProjectOneTest {
         String expected = "de";
 
         // THEN
-        Assert.assertEquals(expected, actual);
+        Assert.assertNotNull(actual);
+        Assert.assertNotEquals(expected, actual);
     }
 
     @Test
