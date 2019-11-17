@@ -147,7 +147,7 @@ public class ProjectOne {
         // write your code here
         int a = word.length();
       result = word.substring(a-2, a-1);
-        // end of code
+        // end of code//
         return result;
     }
 
